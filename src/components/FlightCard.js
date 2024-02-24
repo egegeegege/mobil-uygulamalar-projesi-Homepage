@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 
-import IconLabel from './IconLabel';
+import IconLabel from './bilgi';
 
 const iconColor = '#6c5ce7';
 const RestaurantCard = ({ info }) => {
@@ -21,8 +21,8 @@ const RestaurantCard = ({ info }) => {
           <Text style={styles.categoryStyle}>{categories}</Text>
 
           <View style={styles.iconLabelStyle}>
-            <IconLabel name="ios-time" label={deliveryTime} color={iconColor} />
-            <IconLabel name="ios-pin" label={distance} color={iconColor} />
+            <IconLabel name="class" label={deliveryTime} color={iconColor} />
+            <IconLabel name="zaman-yer-km" label={distance} color={iconColor} />
           </View>
         </View>
       </View>
@@ -32,7 +32,7 @@ const RestaurantCard = ({ info }) => {
 
 const deviceWidth = Math.round(Dimensions.get('window').width);
 const offset = 40;
-const radius = 20;
+const radius = 15;
 const styles = StyleSheet.create({
   container: {
     width: deviceWidth - 20,
